@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="57dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecipeInfoFragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context=".CreateRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/recipeImage"
+            android:layout_width="match_parent"
+            android:scaleX="1.7"
+            android:clickable="true"
+            android:scaleY="1.7"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+            android:scaleType="fitXY"
+
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context=".CreateRecipeActivity">
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+
+        android:textSize="22dp"
+        android:text="Ingredients"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ingredientsTextView"
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="Preperation Method"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/preperationMethodTextView"
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="Notes"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/scheduleRecipeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/colorRedButton"
+        android:onClick="scheduleRecipe"
+        app:srcCompat="@drawable/ic_schedule_white_24dp" />
+
+
+
+</RelativeLayout>

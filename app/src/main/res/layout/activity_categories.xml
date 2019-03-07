@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CategoriesActivity"
+        android:orientation="vertical">
+
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+
+
+
+        <ListView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/categories_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addCategoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorRedButton"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="addCategory"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+
+        <View android:layout_width="match_parent"
+            android:layout_marginTop="56dp"
+            android:layout_height="13dp"
+            android:background="@drawable/toolbar_dropshadow"/>
+    </RelativeLayout>
+</FrameLayout>

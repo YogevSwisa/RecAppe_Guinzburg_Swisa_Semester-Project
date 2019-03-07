@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RecAppe</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="title_activity_create_recipe">CreateRecipeActivity</string>
+    <string name="title_activity_watch_recipe">WatchRecipeActivity</string>
+    <string name="title_activity_watch_category">WatchCategoryActivity</string>
+    <string name="title_activity_edit_recipe">EditRecipeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
